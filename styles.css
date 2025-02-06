@@ -1,0 +1,78 @@
+/* Réglages généraux */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Conteneur principal du jeu */
+#game {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Message affichant le joueur courant */
+#message {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Grille de jeu en mode CSS Grid */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin: 0 auto 20px auto;
+}
+
+/* Style des cellules */
+.cell {
+  background-color: #e8e8e8;
+  border: 2px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cell:hover {
+  background-color: #d0d0d0;
+}
+
+/* Bouton de réinitialisation */
+#restart {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#restart:hover {
+  background-color: #7247ce;
+}
+
+.winner {
+  background-color: green !important;
+  color: white;
+  font-weight: bold;
+}
